@@ -1,0 +1,18 @@
+📚 Quiz App - Programming Practice
+A cross-language coding quiz app designed to help learners practice and test their knowledge in any programming language. The app features three difficulty levels — Beginner, Intermediate, and Advanced — with a variety of multiple-choice coding-related questions.
+
+🧠 Features
+🔤 Supports multiple languages (C, C++, Python, Java, JavaScript, etc.)
+
+🧩 3 Levels of Difficulty:
+
+Beginner – Basic syntax and concepts
+
+Intermediate – Loops, conditions, arrays, functions
+
+Advanced – Data Structures, OOP, Algorithms
+
+✅ Real-time scoring and feedback
+
+🗃️ Question bank stored in JSON or database
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz App</title>
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+</head>
+<body>
+<div class="container">
+  <div class="start-screen">
+    <h1>Quiz App</h1>
+    <label for="num-questions">Number of Questions:</label>
+    <select id="num-questions">
+      <option value="5">5</option>
+      <option value="10" selected>10</option>
+      <option value="15">15</option>
+    </select>
+
+    <label for="category">Select Category:</label>
+    <select id="category">
+      <option value="">Any Category</option>
+      <option value="VueJS">VueJS</option>
+      <option value="Laravel">Laravel</option>
+      <option value="Django">Django</option>
+      <option value="Python">Python</option>
+      <option value="Terraform">Terraform</option>
+      <option value="Postgres">Postgres</option>
+      <option value="Next.js">Next.js</option>
+      <option value="nodeJS">nodeJS</option>
+      <option value="Openshift">Openshift</option>
+      <option value="MySQL">MySQL</option>
+      <option value="BASH">BASH</option>
+      <option value="WordPress">WordPress</option>
+      <option value="Linux">Linux</option>
+      <option value="PHP">PHP</option>
+      <option value="Kubernetes">Kubernetes</option>
+      <option value="Apache Kafka">Apache Kafka</option>
+      <option value="Docker">Docker</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="HTML">HTML</option>
+      <option value="cPanel">cPanel</option>
+      <option value="React">React</option>
+      <option value="Ubuntu">Ubuntu</option>
+    </select>
+
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="">Any Difficulty</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+
+    <label for="time">Time per question (seconds):</label>
+    <select id="time">
+      <option value="10" selected>10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+
+    <button id="start-btn">Start Quiz</button>
+    <p id="error-msg" style="color: red; display:none;">No questions found. Try changing category or difficulty.</p>
+  </div>
+
+  <div class="quiz hide">
+    <div class="timer">
+      <div class="progress-bar" id="progress-bar"></div>
+      <div id="time-left"></div>
+    </div>
+    <div class="question" id="question"></div>
+    <div id="answers"></div>
+    <button id="submit-btn" disabled>Submit</button>
+    <button id="next-btn" class="hide">Next</button>
+  </div>
+
+  <div class="end-screen hide">
+    <h1>Quiz Completed</h1>
+    <p>Your score: <span id="score"></span> / <span id="total"></span></p>
+    <button id="restart-btn">Restart Quiz</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
